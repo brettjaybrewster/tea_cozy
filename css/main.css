@@ -3,7 +3,6 @@ img, #mission {
   border: 2px solid seashell;
 }
 
-
 /*GENERAL RULES*/
 body {
   font-family: Helvetica;
@@ -60,4 +59,19 @@ body {
   width: 1200px;
   text-align: center;
   border: 2px solid seashell;
+}
+
+/*FEATURED ITEMS*/
+#featured {
+  display: flex;
+  text-align: center;
+  width: 1000px;
+}
+#featured .text_banner {
+  display: block;
+  width: 1000px;
+}
+#featured .pair img {
+  height: 200px;
+  width: 300px;
 }
