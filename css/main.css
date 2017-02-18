@@ -15,6 +15,7 @@ body {
 
 /*HEADER*/
 #header {
+  display: inline-flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -29,10 +30,13 @@ body {
   float: left;
 }
 #header nav, #ghost_header nav {
+  display: inline-flex;
+  align-items: flex-end;
   float: right;
 }
 #header nav ul li, #ghost_header nav ul li {
   display: inline-block;
+  flex-shrink: 3;
 }
 #header nav ul li a, #ghost_header nav ul li a  {
   color: seashell;
