@@ -16,9 +16,9 @@ body {
   width: 100%;
   border-bottom: 1px solid seashell;
 }
-#header h1, #ghost_header h1 {
+#header img, #ghost_header img {
   margin: 0 0 0 10px;
-  font-size: 50px;
+  height: 50px;
   float: left;
 }
 #header nav, #ghost_header nav {
