@@ -1,0 +1,42 @@
+/*GENERAL RULES*/
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/*HEADER*/
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+}
+#header h1, #ghost_header h1 {
+  margin: 0 0 0 10px;
+  font-size: 50px;
+  float: left;
+}
+#header nav, #ghost_header nav {
+  float: right;
+}
+#header nav ul li, #ghost_header nav ul li {
+  display: inline-block;
+}
+#header nav ul li a, #ghost_header nav ul li a  {
+  color: seashell;
+}
+.ghost {
+  visibility: hidden;
+}
+
+/*MISSION STATEMENT*/
+#mission {
+  display: block;
+  height: 700px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+}
