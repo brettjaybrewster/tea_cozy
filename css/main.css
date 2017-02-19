@@ -15,6 +15,7 @@ body {
 /*HEADER*/
 #header {
   display: inline-flex;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
@@ -33,9 +34,12 @@ body {
   align-items: flex-end;
   float: right;
 }
+#header nav ul {
+  padding: 0;
+}
 #header nav ul li, #ghost_header nav ul li {
+  font-size: .75em;
   display: inline-block;
-  flex-shrink: 3;
 }
 #header nav ul li a, #ghost_header nav ul li a  {
   color: seashell;
@@ -52,7 +56,7 @@ body {
   width: 90%;
   height: 700px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
-  margin: 0 5% 0 5%;
+  margin: 0 5% 30px 5%;
 }
 #mission .text_banner {
   display: inline-block;
@@ -64,14 +68,37 @@ body {
 /*FEATURED ITEMS*/
 #featured {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
-  width: 1000px;
+  width: 100%;
 }
-#featured .text_banner {
+div#featured .text_banner {
   display: block;
   width: 1000px;
 }
 #featured .pair img {
   height: 200px;
   width: 300px;
+  margin: 0 5px 0 5px;
+}
+#featured .pair h6 {
+  border: 2px solid red;
+  margin: 4px 0 25px 0;
+  position: relative;
+}
+
+/*MEDIA QUERIES*/
+  /*SMALL SCREENS*/
+@media only screen and (max-width: 480px) {
+  #header nav ul li, #ghost_header nav ul li {
+    font-size: .6em;
+  }
+}
+/*TINY SCREENS*/
+@media only screen and (max-width: 380px) {
+  #header nav ul li, #ghost_header nav ul li {
+    font-size: .5em;
+  }
 }
