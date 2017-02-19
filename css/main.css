@@ -1,8 +1,8 @@
 /*OFFLINE RULES*/
-img, #mission, #locations {
+/*img, #mission, #locations {
   border: 2px solid seashell;
   background-color: darkslategray;
-}
+}*/
 
 /*GENERAL RULES*/
 body {
@@ -86,8 +86,8 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
   text-align: center;
+  justify-content: center;
   width: 100%;
 }
 #featured .text_banner {
@@ -104,7 +104,7 @@ h4 {
 #featured .pair img {
   height: 200px;
   width: 300px;
-  margin: 0 5px 0 5px;
+  margin: 0 15px 0 15px;
 }
 #featured .pair h6 {
   margin: 4px 0 25px 0;
@@ -116,7 +116,7 @@ h4 {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   min-height: 500px;
   width: 90%;
   margin: 50px 5% 0 5%;
@@ -130,7 +130,7 @@ h4 {
   /*border: 2px solid blue;*/
 }
 #locations .text_banner {
-  margin: 0 20px 0 20px;
+  margin: 10px 20px 10px 20px;
   padding: 5px;
   text-align: center;
   width: 200px;
