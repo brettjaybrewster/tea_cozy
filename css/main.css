@@ -1,6 +1,7 @@
 /*OFFLINE RULES*/
-img, #mission {
+img, #mission, #locations {
   border: 2px solid seashell;
+  background-color: darkslategray;
 }
 
 /*GENERAL RULES*/
@@ -10,6 +11,18 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+}
+.text_banner {
+  background-color: black;
+}
+.ghost {
+  visibility: hidden;
+}
+h2 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 16px;
 }
 
 /*HEADER*/
@@ -23,6 +36,7 @@ body {
   width: 100%;
   border-bottom: 1px solid seashell;
   background-color: black;
+  z-index: 2;
 }
 #header img, #ghost_header img {
   margin: 7px 0 7px 10px;
@@ -44,9 +58,6 @@ body {
 #header nav ul li a, #ghost_header nav ul li a  {
   color: seashell;
 }
-.ghost {
-  visibility: hidden;
-}
 
 /*MISSION STATEMENT*/
 #mission {
@@ -62,7 +73,12 @@ body {
   display: inline-block;
   width: 1200px;
   text-align: center;
-  border: 2px solid seashell;
+}
+#mission .text_banner h2 {
+  margin: 5px 0 10px 0;
+}
+#mission .text_banner h4 {
+  margin: 10px 0 5px 0;
 }
 
 /*FEATURED ITEMS*/
@@ -74,9 +90,16 @@ body {
   text-align: center;
   width: 100%;
 }
-div#featured .text_banner {
+#featured .text_banner {
+  margin: 50px 0 0 0;
   display: block;
   width: 1000px;
+}
+#featured .text_banner h2 {
+  margin: 10px 0 5px 0;
+}
+#featured .text_banner h4 {
+  margin: 10px 0 25px 0;
 }
 #featured .pair img {
   height: 200px;
@@ -84,12 +107,77 @@ div#featured .text_banner {
   margin: 0 5px 0 5px;
 }
 #featured .pair h6 {
-  border: 2px solid red;
   margin: 4px 0 25px 0;
   position: relative;
 }
 
+/*LOCATIONS*/
+#locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 500px;
+  width: 90%;
+  margin: 50px 5% 0 5%;
+}
+#locations h2 {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 0 0;
+  margin: 0;
+  max-height: 65px;
+  /*border: 2px solid blue;*/
+}
+#locations .text_banner {
+  margin: 0 20px 0 20px;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+#locations .text_banner h4 {
+  font-size: 20px;
+}
+#locations .text_banner p {
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+/*FOOTER*/
+#footer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#footer .text_banner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 200px;
+  text-align: center;
+  align-content: space-between;
+}
+#footer .text_banner h2 {
+  width: 100%;
+}
+#footer .text_banner h5 {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+#footer h4 {
+  float: left;
+  margin: 0 0 0 20px;
+}
+
 /*MEDIA QUERIES*/
+  /*BIG SCREENS*/
+@media only screen and (min-width: 868px) {
+  #locations .text_banner {
+    position: relative;
+    bottom: 50px;
+  }
+}
   /*SMALL SCREENS*/
 @media only screen and (max-width: 480px) {
   #header nav ul li, #ghost_header nav ul li {
